@@ -1,0 +1,80 @@
+[
+  {
+    "nazev": "sekera",
+    "prenositelna": true,
+    "hmotnost": 3,
+    "pouzitelna": true
+  },
+  {
+    "nazev": "zrcadlo",
+    "prenositelna": true,
+    "hmotnost": 1,
+    "pouzitelna": true
+  },
+  {
+    "nazev": "mapa",
+    "prenositelna": true,
+    "hmotnost": 1,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "prsten",
+    "prenositelna": true,
+    "hmotnost": 1,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "páčidlo",
+    "prenositelna": true,
+    "hmotnost": 3,
+    "pouzitelna": true
+  },
+  {
+    "nazev": "jablko",
+    "prenositelna": true,
+    "hmotnost": 3,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "prut",
+    "prenositelna": true,
+    "hmotnost": 2,
+    "pouzitelna": true
+  },
+  {
+    "nazev": "ryba",
+    "prenositelna": true,
+    "hmotnost": 2,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "dřevěný klíč",
+    "prenositelna": true,
+    "hmotnost": 2,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "ledový klíč",
+    "prenositelna": true,
+    "hmotnost": 2,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "zlatý klíč",
+    "prenositelna": true,
+    "hmotnost": 2,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "klobouk",
+    "prenositelna": false,
+    "hmotnost": 2,
+    "pouzitelna": false
+  },
+  {
+    "nazev": "prázdná_peněženka",
+    "prenositelna": false,
+    "hmotnost": 1,
+    "pouzitelna": false
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "nazev": "zřícenina",
+    "popis": "Zbytky staré tvrze. Uvnitř tvrze se nachází truhla, před kterou stojí poutník, se kterým si můžeš promluvit.",
+    "vychody": ["tatry", "košice", "hrad"],
+    "veci": [],
+    "postavy" : ["poutník"]
+  },
+  {
+    "nazev": "hrad",
+    "popis": "Starobylý hrad s bránou, kterou lze otevřít pouze třemi klíči (ledový, dřevěný a zlatý). Koused od brány sedí duch, se kterým si můžeš promluvit.",
+    "vychody": ["orava", "bratislava", "zřícenina"],
+    "veci" : [],
+    "postavy" : ["duch"]
+  },
+  {
+    "nazev": "orava",
+    "popis": "Vesnice u lesa. V dáli vidíš podezřelý pařez, který tě přitahuje. Chybí ti ale sekera, abys pařez mohl roštípnout. Kousek od lesa si všimneš vesnice - ve vesnici najdeš dřevorubce, se kterým se dá promluvit.",
+    "vychody": ["hrad"],
+    "veci" : [],
+    "postavy" : ["dřevorubec"]
+  },
+  {
+    "nazev": "tatry",
+    "popis": "V Tatrách se nachází zamrzlé jezero, které můžeš roztopit pomocí zrcadla. Na dně jezera si všimneš předmětu, který vypadá jako klíč.",
+    "vychody": ["zřícenina"],
+    "veci" : [],
+    "postavy" : []
+  },
+  {
+    "nazev": "bratislava",
+    "popis": "Hlavní město, ve kterém se nachází muzeum, jenž má zavřený trezor. Všimneš si správce muzea, se kterým můžeš promluvit.",
+    "vychody": ["hrad"],
+    "veci": ["jablko", "prázdná_peněženka"],
+    "postavy" : ["správce"]
+  },
+  {
+    "nazev": "košice",
+    "popis": "Městský trh, ve kterém se nachází kupkyně, se kterou si můžeš promluvit.",
+    "vychody": ["zřícenina", "dunaj"],
+    "veci": [],
+    "postavy" : ["kupkyně"]
+  },
+  {
+    "nazev": "dunaj",
+    "popis": "Řeka, kde můžeš rybařit. Na břehu se nachází prut, který můžeš sebrat.",
+    "vychody": ["košice"],
+    "veci": ["prut", "klobouk"],
+    "postavy" : []
+  }
+]
