@@ -1,9 +1,7 @@
 /* Soubor je ulozen v kodovani UTF-8.
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
 package cz.vse.adventura.main;
-import cz.vse.adventura.HelloApplication;
 import cz.vse.adventura.logika.Hra;
-import cz.vse.adventura.logika.IHra;
 import cz.vse.adventura.uiText.TextoveRozhrani;
 import javafx.application.Application;
 import javafx.application.Platform;

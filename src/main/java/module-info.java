@@ -6,8 +6,6 @@ module cz.vse.adventura {
     requires javafx.graphics;
 
 
-    opens cz.vse.adventura to javafx.fxml;
-    exports cz.vse.adventura;
     exports cz.vse.adventura.main;
     opens cz.vse.adventura.main to javafx.fxml;
 
