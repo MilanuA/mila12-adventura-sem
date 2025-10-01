@@ -3,6 +3,7 @@ module cz.vse.adventura {
     requires javafx.fxml;
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
+    requires javafx.graphics;
 
 
     opens cz.vse.adventura to javafx.fxml;
