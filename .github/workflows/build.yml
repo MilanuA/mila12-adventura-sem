@@ -25,5 +25,4 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: javafx-zip
           path: target/*.zip
