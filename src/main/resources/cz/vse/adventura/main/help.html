@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Nápověda</title>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 30px;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+            color: #222;
+        }
+        h1, h2, h3 {
+            color: #00104e;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background: #8eb4ff;
+        }
+        code {
+            background: #eaeaea;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Tajemství Spišského pokladu</h1>
+
+        <pre>
+                        [Tatry]
+                           |
+                     [Zřícenina] - [Košice] - [Dunaj]
+                           |
+          [Orava] - [Spišský hrad] - [Bratislava]
+            </pre>
+
+        <h2>Průběh hry:</h2>
+
+        <h3>1. Spišský hrad (startovací místo)</h3>
+        <p>Stará kamenná brána se třemi otvory.<br>
+            Potřebuješ 3 klíče: ledový, dřevěný, zlatý.<br>
+            <strong>Postava:</strong> Starý duch Strážce hradu – dá nápovědu.</p>
+
+        <h3>2. Orava</h3>
+        <p>Vesnice u lesa. V dálce je podezřelý pařez.<br>
+            <strong>Postava:</strong> Dřevorubec – dá ti sekeru, když mu doneseš rybu z Dunaje.<br>
+            <strong>Výsledek:</strong> Po získání sekery můžeš rozseknout pařez v lese a získat Dřevěný klíč.</p>
+
+        <h3>3. Tatry</h3>
+        <p>Zamrzlé jezero. Na dně je něco lesklého.<br>
+            <strong>Podmínka:</strong> Použij zrcadlo (získáš v Košicích), rozmrazíš jezero.<br>
+            <strong>Výsledek:</strong> Najdeš Ledový klíč.</p>
+
+        <h3>4. Bratislava</h3>
+        <p>Velké město. Muzeum má zavřený trezor.<br>
+            <strong>Podmínka:</strong> Najdi mapu Slovenska (v Zřícenině). Pod stromem je jablko, které je potřeba donést Poutníkovi v Zřícenině.<br>
+            <strong>Postava:</strong> Správce muzea – pustí tě do trezoru, pokud máš mapu.<br>
+            <strong>Výsledek:</strong> Získáš Zlatý klíč.</p>
+
+        <h3>5. Košice</h3>
+        <p>Městský trh.<br>
+            <strong>Postava:</strong> Kupkyně – vymění zrcadlo za stříbrný prsten (ze Zříceniny).<br>
+            <strong>Výsledek:</strong> Získáš zrcadlo.</p>
+
+        <h3>6. Zřícenina</h3>
+        <p>Zbytky staré tvrze. Nachází se tu truhla (je potřeba páčidlo).<br>
+            <strong>Postava:</strong> Poutník – dá ti páčidlo, pokud ho zasytíš (dáš mu jablko z Bratislavy).<br>
+            <strong>Výsledek:</strong> Otevři truhlu → získáš prsten a mapu Slovenska.</p>
+
+        <h3>7. Dunaj</h3>
+        <p>Řeka. Zde můžeš chytit rybu.<br>
+            <strong>Předmět:</strong> Rybářský prut (leží na břehu, volně k sebrání).<br>
+            <strong>Výsledek:</strong> Použij prut → získej rybu → dones do Oravy.</p>
+
+        <h2>Předměty a využití:</h2>
+        <table>
+            <tr><th>Příkaz</th><th>Popis</th><th>Příklad použití</th></tr>
+            <tr><td><code>jdi &lt;místo&gt;</code></td><td>Přesun do jiné lokace, pokud cesta existuje.</td><td><code>jdi orava</code></td></tr>
+            <tr><td><code>nápověda</code></td><td>Vypíše seznam dostupných příkazů.</td><td><code>nápověda</code></td></tr>
+            <tr><td><code>zkontroluj</code></td><td>Zkontroluje, zda má hráč všechny 3 klíče.</td><td><code>zkontroluj</code></td></tr>
+            <tr><td><code>konec</code></td><td>Ukončí hru.</td><td><code>konec</code></td></tr>
+            <tr><td><code>seber &lt;věc&gt;</code></td><td>Vezme předmět z aktuální místnosti.</td><td><code>seber prut</code></td></tr>
+            <tr><td><code>použij &lt;věc&gt;</code></td><td>Použije konkrétní předmět (např. sekera, prut…).</td><td><code>použij zrcadlo</code></td></tr>
+            <tr><td><code>mluv &lt;postava&gt;</code></td><td>Zahájí rozhovor s postavou v místnosti.</td><td><code>mluv dřevorubec</code></td></tr>
+            <tr><td><code>další</code></td><td>Posune se na další větu v rozhovoru.</td><td><code>další</code></td></tr>
+            <tr><td><code>dej &lt;věc&gt; &lt;postava&gt;</code></td><td>Předá předmět postavě.</td><td><code>dej ryba dřevorubec</code></td></tr>
+            <tr><td><code>odemkni</code></td><td>Ve Spišském hradě – použije 3 klíče a ukončí hru vítězstvím.</td><td><code>odemkni</code></td></tr>
+        </table>
+
+        <h2>Závěr hry</h2>
+        <p>Jakmile má hráč všechny 3 klíče:</p>
+        <ul>
+            <li>Dřevěný klíč</li>
+            <li>Ledový klíč</li>
+            <li>Zlatý klíč</li>
+        </ul>
+        <p>→ Vrátí se na Spišský hrad → Použije příkaz <code>odemkni branu</code> → hra končí vítězstvím.</p>
+
+        <h2>Předměty:</h2>
+        <table>
+            <tr><th>Předmět</th><th>Kde získat</th><th>Použití</th></tr>
+            <tr><td>Sekera</td><td>Orava (od dřevorubce)</td><td>Rozseknutí pařezu → Dřevěný klíč</td></tr>
+            <tr><td>Zrcadlo</td><td>Košice (výměna za prsten)</td><td>Rozmrazení jezera v Tatrách → Ledový klíč</td></tr>
+            <tr><td>Mapa Slovenska</td><td>Zřícenina (v truhle)</td><td>Přístup do trezoru v Bratislavě</td></tr>
+            <tr><td>Stříbrný prsten</td><td>Zřícenina (v truhle)</td><td>Výměna za zrcadlo v Košicích</td></tr>
+            <tr><td>Páčidlo</td><td>Zřícenina (od poutníka)</td><td>Otevření truhly ve Zřícenině</td></tr>
+            <tr><td>Jablko</td><td>Bratislava (pod stromem)</td><td>Dá se poutníkovi ve Zřícenině</td></tr>
+            <tr><td>Prázdná peněženka</td><td>Bratislava (válí se po cestě)</td><td>Nemá využití</td></tr>
+            <tr><td>Rybářský prut</td><td>Dunaj (na břehu)</td><td>Chytání ryby</td></tr>
+            <tr><td>Rybářský klobouk</td><td>Dunaj (na břehu)</td><td>Nemá využití</td></tr>
+            <tr><td>Ryba</td><td>Dunaj (pomocí prutu)</td><td>Dáš dřevorubci v Oravě → získáš sekeru</td></tr>
+        </table>
+    </body>
+</html>

@@ -3,6 +3,7 @@
 package cz.vse.adventura.main;
 import cz.vse.adventura.logika.Hra;
 import cz.vse.adventura.uiText.TextoveRozhrani;
+import cz.vse.adventura.utils.Barvy;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +15,7 @@ import javafx.stage.Stage;
  */
 public class Start extends Application
 {
-    /***************************************************************************
+    /*
      * Metoda, prostřednictvím níž se spouští celá aplikace.
      *
      * @param args Parametry příkazového řádku
@@ -29,6 +30,7 @@ public class Start extends Application
             Platform.exit();
         }
         else{
+            Barvy.povolitAnsi(false);
             launch();
         }
     }

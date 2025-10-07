@@ -1,0 +1,26 @@
+name: Build JavaFX
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: jelastic/maven:3.9.5-openjdk-21
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build with Maven JavaFX
+        run: mvn javafx:jlink -B
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: javafx-zip
+          path: target/*.zip
